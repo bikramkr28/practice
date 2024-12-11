@@ -1,9 +1,9 @@
 connector:
-name: ownapp_gitconnector
-identifier: ownappgitconnector
+name: git-connector
+identifier: gitconnector
 description: ""
 orgIdentifier: default
-projectIdentifier: default_project
+projectIdentifier: assignment
 type: Github
 spec:
     url: https://github.com/microservices-demo/microservices-demo
@@ -13,10 +13,10 @@ spec:
         type: UsernameToken
         spec:
         username: GITHUB_USERNAME
-        tokenRef: harness_gitpat
+        tokenRef: github-toke
     apiAccess:
     type: Token
     spec:
-        tokenRef: harness_gitpat
+        tokenRef: github-toke
     executeOnDelegate: false
     type: Repo
